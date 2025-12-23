@@ -5,15 +5,15 @@ public class Presents {
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
-        int[] giver = new int[n + 1];
+        int[] ans = new int[n + 1]; // 1-based indexing
 
         for (int i = 1; i <= n; i++) {
             int p = sc.nextInt();
-            giver[p] = i;
+            ans[p] = i;
         }
 
         for (int i = 1; i <= n; i++) {
-            System.out.print(giver[i] + " ");
+            System.out.print(ans[i] + " ");
         }
     }
 }
